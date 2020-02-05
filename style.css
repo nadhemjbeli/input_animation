@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  margin-left: 25%;
   height: 60vh;
   display: flex;
   justify-content: space-around;
@@ -66,6 +67,6 @@ body {
 .form input:valid + .label-name::after {
   transform: translateX(0%);
 }
-input {
-  bottom: 5px;
+div {
+  width: 100%;
 }
