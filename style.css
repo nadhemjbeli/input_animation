@@ -10,14 +10,7 @@ body {
 .form {
   width: 50%;
   position: relative;
-  height: 120px;
-  overflow: hidden;
-}
-.name-section {
-  width: 100%;
-  position: relative;
   height: 50px;
-  overflow: hidden;
 }
 .form input {
   width: 100%;
@@ -35,6 +28,7 @@ body {
   height: 100%;
   pointer-events: none;
   border-bottom: 1px solid black;
+  overflow: hidden;
 }
 
 .form label::after {
