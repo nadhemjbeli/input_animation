@@ -10,17 +10,34 @@
   <body>
     <h1>Animation inputs</h1>
 
-    <div class="form">
-      <!-- <div class="name-section">
-        <input type="text" name="name" id="" autocomplete="off" required />
+    <div id="app">
+      <div class="form">
+        <input
+          type="text"
+          name="name"
+          v-model="message"
+          id=""
+          autocomplete="off"
+          required
+        />
         <label for="name" class="label-name">
-          <span class="content-name">Name</span>
+          <span class="content-name">Family name</span>
         </label>
-      </div> -->
-      <input type="text" name="name" id="" autocomplete="off" required />
-      <label for="name" class="label-name">
-        <span class="content-name">Family name</span>
-      </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <p>Message is: {{ message }}</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          message: ""
+        },
+        methods: {}
+      });
+    </script>
   </body>
 </html>
