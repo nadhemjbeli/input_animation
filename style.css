@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   height: 60vh;
   display: flex;
@@ -59,4 +64,7 @@ body {
 .form input:focus + .label-name::after,
 .form input:valid + .label-name::after {
   transform: translateX(0%);
+}
+input {
+  bottom: 5px;
 }
